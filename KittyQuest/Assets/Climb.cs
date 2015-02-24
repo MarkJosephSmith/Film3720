@@ -21,6 +21,8 @@ public class Climb : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
+        
+
 		//reduce our grip
 		if (grip > 0) 
 		{
@@ -30,24 +32,30 @@ public class Climb : MonoBehaviour {
 		//check if you are climbing
 		if (isClimbing) 
 		{
-            //stop any current motion
-            this.gameObject.GetComponent<CharacterMotor>().movement.velocity = Vector3.zero;
-            this.gameObject.GetComponent<CharacterMotor>().movement.frameVelocity = Vector3.zero;
+            
 
-			// w moves you up and resets your grip
+            //stop any current motion
+            //this.gameObject.GetComponent<CharacterMotor>().movement.velocity = Vector3.zero;
+            //this.gameObject.GetComponent<CharacterMotor>().movement.frameVelocity = Vector3.zero;
+
+			// "w" moves you up and resets your grip
 			if (Input.GetKey("w"))
 			{
 				System.Console.WriteLine(isClimbing);
 				grip = 100;
-				this.gameObject.transform.Translate(0.0f,0.2f,0.0f,Space.World);
+				//this.gameObject.transform.Translate(0.0f,0.2f,0.0f,Space.World);
+                this.gameObject.GetComponent<CharacterController>().Move(new Vector3(0.0f, 0.2f, 0.0f));
+                
 				
 			}
 			
-			// s moves you down and resets your grip
+			// "s" moves you down and resets your grip
 			if (Input.GetKey("s"))
 			{
 				grip = 100;
-                this.gameObject.transform.Translate(0.0f, -0.2f, 0.0f, Space.World);
+                //this.gameObject.transform.Translate(0.0f, -0.2f, 0.0f, Space.World);
+                this.gameObject.GetComponent<CharacterController>().Move(new Vector3(0.0f, -0.2f, 0.0f));
+                
 				
 			}
 		}
@@ -115,15 +123,16 @@ public class Climb : MonoBehaviour {
             }
         }
     }
-     
-    
+
+
 
     /*back to collision climb tests
     * 
-    
+    * 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag == "Climbable")
+        Debug.Log("Collided, climbing is " + isClimbing);
+        if (col.gameObject.CompareTag("Climbable"))
         {
             Debug.Log("Collided, climbing is " + isClimbing);
             //check if we are currently climbing and call the appropriate function
@@ -135,15 +144,15 @@ public class Climb : MonoBehaviour {
 
     void OnCollisionExit(Collision col)
     {
-        if (col.gameObject.tag == "Climbable")
+        if (col.gameObject.CompareTag("Climbable"))
         {
             Debug.Log("Collided, climbing is " + isClimbing);
             //check if we are currently climbing and call the appropriate function
             StopClimbing();
 
         }
-    }
-     * */
+    }*/
+
 
 
 
@@ -166,10 +175,17 @@ public class Climb : MonoBehaviour {
         this.gameObject.GetComponent<CharacterMotor>().movement.gravity = 0.0f;
 		
 		//disable the normal movement controls
-		GetComponent<FPSInputController>().enabled = false;
+		//GetComponent<FPSInputController>().enabled = false;
 
-        //stop any current motion
+        //stop any current motion, just setting velocity wasn't stoping the character, this is quick and dirty fix.
         this.gameObject.GetComponent<CharacterMotor>().movement.velocity = Vector3.zero;
+        //this.gameObject.GetComponent<CharacterMotor>().movement.maxAirAcceleration = 0.0f;
+        //this.gameObject.GetComponent<CharacterMotor>().movement.maxGroundAcceleration = 0.0f;
+        this.gameObject.GetComponent<CharacterMotor>().movement.maxForwardSpeed = 0.0f;
+        this.gameObject.GetComponent<CharacterMotor>().movement.maxBackwardsSpeed = 0.0f;
+        //this.gameObject.GetComponent<CharacterMotor>().movement.maxFallSpeed = 0.0f;
+        this.gameObject.GetComponent<CharacterMotor>().movement.maxSidewaysSpeed = 0.0f;
+
         this.gameObject.GetComponent<CharacterMotor>().movement.frameVelocity = Vector3.zero;
 		
 		
@@ -189,12 +205,18 @@ public class Climb : MonoBehaviour {
 		//set the bool
 		isClimbing = false;
 		
-		//this.gameObject.
+        //restore all the the max variables to their original
 		//rigidbody.useGravity = true;
         this.gameObject.GetComponent<CharacterMotor>().movement.gravity = 10.0f;
+        //this.gameObject.GetComponent<CharacterMotor>().movement.maxAirAcceleration = 20.0f;
+        //this.gameObject.GetComponent<CharacterMotor>().movement.maxGroundAcceleration = 30.0f;
+        this.gameObject.GetComponent<CharacterMotor>().movement.maxForwardSpeed = 10.0f;
+        this.gameObject.GetComponent<CharacterMotor>().movement.maxBackwardsSpeed = 10.0f;
+        //this.gameObject.GetComponent<CharacterMotor>().movement.maxFallSpeed = 20.0f;
+        this.gameObject.GetComponent<CharacterMotor>().movement.maxSidewaysSpeed = 10.0f;
 		
 		//enable the normal movement controls
-		GetComponent<FPSInputController>().enabled = true;
+		//GetComponent<FPSInputController>().enabled = true;
 		
 		
 	}
