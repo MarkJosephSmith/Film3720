@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Climb.cs" />
      <Compile Include="Assets\ClimbCollide.cs" />
+     <Compile Include="Assets\Moveable.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/4.6.1/UnityEngine.UI.dll</HintPath>
  </Reference>

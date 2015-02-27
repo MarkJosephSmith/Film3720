@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Climb.cs" />
      <Compile Include="Assets\ClimbCollide.cs" />
+     <Compile Include="Assets\Moveable.cs" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Classes/film3720/Film3720/KittyQuest/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>

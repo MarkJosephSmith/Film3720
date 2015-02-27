@@ -121,7 +121,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 825264590}
   m_GameObject: {fileID: 58423749}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -241,7 +241,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 558893968}
   m_GameObject: {fileID: 389975039}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -309,6 +309,10 @@ Prefab:
       propertyPath: m_Name
       value: ClimbTrigger3
       objectReference: {fileID: 0}
+    - target: {fileID: 6500000, guid: 0a5ff3fb2a9787a469807b817d67164c, type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0a5ff3fb2a9787a469807b817d67164c, type: 2}
   m_RootGameObject: {fileID: 389975039}
@@ -361,7 +365,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 91009051}
   m_GameObject: {fileID: 584515249}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -400,6 +404,7 @@ GameObject:
   - 114: {fileID: 687925353}
   - 114: {fileID: 687925358}
   - 64: {fileID: 687925359}
+  - 114: {fileID: 687925360}
   m_Layer: 0
   m_Name: First Person Controller
   m_TagString: Untagged
@@ -547,6 +552,17 @@ MeshCollider:
   m_SmoothSphereCollisions: 0
   m_Convex: 1
   m_Mesh: {fileID: 0}
+--- !u!114 &687925360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 687925352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acf43700836818849ace641d144ef00c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &825264590
 Prefab:
   m_ObjectHideFlags: 0
@@ -642,7 +658,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 1455193128}
   m_GameObject: {fileID: 1268466017}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -962,6 +978,7 @@ GameObject:
   - 33: {fileID: 1677193675}
   - 23: {fileID: 1677193673}
   - 64: {fileID: 1677193674}
+  - 54: {fileID: 1677193677}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Climbable
@@ -996,7 +1013,7 @@ MeshCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1677193672}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_SmoothSphereCollisions: 0
@@ -1016,11 +1033,26 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1677193672}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .0953836441, y: 9.05646324, z: 5.80580091}
+  m_LocalPosition: {x: .100000001, y: 9.89999962, z: 5.80000019}
   m_LocalScale: {x: 6.20166111, y: 22.4675026, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!54 &1677193677
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1677193672}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1716478566
 Prefab:
   m_ObjectHideFlags: 0
