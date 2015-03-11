@@ -30,4 +30,9 @@ function Retrace ()
 		//tracer.transform.rotation = path.IndexOf(pathIndex).transform.rotation;
 		tracer.transform.position = position;
 	}
+	else
+	{
+		pathIndex = 0;
+		CancelInvoke();
+	}
 }
