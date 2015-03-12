@@ -4,10 +4,9 @@ using System.Collections;
 public class ClimbCollide : MonoBehaviour {
 
     bool isClimbing = false;  //is the character currently climbing
-    bool canClimb = false;  //is the character touching a climbable object
+    bool wasClimbing = false;  //is the character touching a climbable object
     int grip = 100;  //how strong is your grip
-    bool onTop = false; //has the character reached the top of a climable object
-    bool touchedGround = false;  //has the character touched the ground since they started climbing
+    float topOfClimbable; //stores the top of a climable object
 
 
 
@@ -18,16 +17,75 @@ public class ClimbCollide : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        if (isClimbing)
+        {
+            //first call 
+            //Debug.Log("first call" + isClimbing);
+
+            //adjust movement, gravity and velocity
+            StartClimbing();
+
+
+            //check to see if we are on the ground or not and set button input appropriatly
+            // "w" moves you up and resets your grip
+            if (Input.GetKey("w"))
+            {
+                System.Console.WriteLine(isClimbing);
+                grip = 100;
+                //this.gameObject.transform.Translate(0.0f,0.2f,0.0f,Space.World);
+                this.gameObject.GetComponent<CharacterController>().Move(new Vector3(0.0f, 0.2f, 0.0f));
+
+
+            }
+
+            // "s" moves you down if you're not grounded and resets your grip
+            if (this.GetComponent<CharacterController>().isGrounded)
+            {
+                //if so nothing changes
+            }
+            //if we aren't grounded change the s key to climb down.
+            else if (Input.GetKey("s")) 
+            {
+                grip = 100;
+                //this.gameObject.transform.Translate(0.0f, -0.2f, 0.0f, Space.World);
+                this.gameObject.GetComponent<CharacterController>().Move(new Vector3(0.0f, -0.2f, 0.0f));
+
+
+            }
+
+        }
+
 	
 	}
 
     /*LateUpdate is used to turn off climbing.  This is done so
      * that the character only keeps climbing if they collide with the
      * climbable object again in the next frame.
+     * 
+     * If they were and no longer are this will trigger a return to standard movement
      */
     void LateUpdate()
     {
-        canClimb = false;
+        //Debug.Log("feet at " + (this.gameObject.GetComponent<CharacterController>().center.y - (this.gameObject.GetComponent<CharacterController>().height / 2)) + "height at " + topOfClimbable);
+        //Debug.Log("feet at " + (this.gameObject.GetComponent<CharacterController>().transform.position.y - (this.gameObject.GetComponent<CharacterController>().height / .5)) + "height at " + topOfClimbable);
+        //Debug.Log("feet at " + (this.gameObject.GetComponent<CharacterController>().transform.position.y) + "height at " + topOfClimbable);
+
+        //stop climbing if we touched the ground or reached the top
+        if (this.gameObject.GetComponent<CharacterController>().isGrounded || !isClimbing)
+        {
+            StopClimbing();
+        }
+
+        //if ((this.gameObject.GetComponent<CharacterController>().center.y - (this.gameObject.GetComponent<CharacterController>().height / 2)) > topOfClimbable)
+        //if ((this.gameObject.GetComponent<CharacterController>().transform.position.y - (this.gameObject.GetComponent<CharacterController>().height / .5)) >= topOfClimbable)
+        if ((this.gameObject.GetComponent<CharacterController>().transform.position.y) >= topOfClimbable)
+        {
+            StopClimbing();
+        }
+
+        
+        
     }
 
 
@@ -45,15 +103,20 @@ public class ClimbCollide : MonoBehaviour {
 
         if (body.gameObject.CompareTag("Climbable"))
         {
-            Debug.Log("Colliding");
+            //Debug.Log("Colliding");
+
+            //this will to see if we are on top of the object and only trigger if we are not.  
+            //The check finds the Y coord of the players feet and compairs it to the top of the object
+            topOfClimbable = body.renderer.bounds.extents.y * 2.0f;
+            
+            //if ((this.gameObject.GetComponent<CharacterController>().center.y - (this.gameObject.GetComponent<CharacterController>().height / 2)) < topOfClimbable)
+            //if ((this.gameObject.GetComponent<CharacterController>().transform.position.y - (this.gameObject.GetComponent<CharacterController>().height / .5)) <= topOfClimbable)
+            if ((this.gameObject.GetComponent<CharacterController>().transform.position.y ) <= topOfClimbable)
+            {
+                isClimbing = true;
+            }
 
 
-
-            //check to see if we are at a correct 
-
-            //check if we are currently climbing and call the appropriate function
-
-            //Climbing();
 
         }
     }
@@ -62,16 +125,30 @@ public class ClimbCollide : MonoBehaviour {
      * needed variables so that the update function can begin climbing
      * 
      */
-    void Climbing()
+    void StartClimbing()
     {
+        //disable current movement and gravity
+        //stop any current motion, just setting velocity wasn't stoping the character, this is quick and dirty fix.
+        this.gameObject.GetComponent<CharacterMotor>().movement.maxForwardSpeed = 0.0f;
+        this.gameObject.GetComponent<CharacterMotor>().movement.maxBackwardsSpeed = 0.0f;
+        this.gameObject.GetComponent<CharacterMotor>().movement.maxSidewaysSpeed = 0.0f;
+        this.gameObject.GetComponent<CharacterMotor>().movement.gravity = 0.0f;
+        this.gameObject.GetComponent<CharacterMotor>().movement.velocity = Vector3.zero;
+        this.gameObject.GetComponent<CharacterMotor>().movement.frameVelocity = Vector3.zero;
         
     }
 
     /*Function that sets all the needed variables so that the update function stops climbing
      * 
      */
-    void Climbing()
+    void StopClimbing()
     {
+        isClimbing = false;
 
+        //restore all the the max variables to their original
+        this.gameObject.GetComponent<CharacterMotor>().movement.maxForwardSpeed = 10.0f;
+        this.gameObject.GetComponent<CharacterMotor>().movement.maxBackwardsSpeed = 10.0f;
+        this.gameObject.GetComponent<CharacterMotor>().movement.maxSidewaysSpeed = 10.0f;
+        this.gameObject.GetComponent<CharacterMotor>().movement.gravity = 10.0f;
     }
 }
