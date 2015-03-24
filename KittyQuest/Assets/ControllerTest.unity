@@ -194,6 +194,46 @@ Prefab:
   m_RootGameObject: {fileID: 584515249}
   m_IsPrefabParent: 0
   m_IsExploded: 1
+--- !u!1 &180213620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 180213621}
+  - 114: {fileID: 180213622}
+  m_Layer: 0
+  m_Name: Fist
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &180213621
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 180213620}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -.0751427412, y: -.66170311, z: .591383398}
+  m_LocalScale: {x: .254743695, y: .254743695, z: .254743695}
+  m_Children: []
+  m_Father: {fileID: 1396882255}
+  m_RootOrder: 0
+--- !u!114 &180213622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 180213620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd3fe9ef4b39f514fa69604b4978c7c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  punchBody: {fileID: 5400000, guid: 4b746e41c12b64e45af8c6a4bbed8d11, type: 2}
 --- !u!1 &389975039
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,7 +561,7 @@ Transform:
   m_PrefabInternal: {fileID: 1716478566}
   m_GameObject: {fileID: 687925352}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.15134764, z: 0}
+  m_LocalPosition: {x: 0, y: 3.87710714, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1308863675}
@@ -770,7 +810,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: .907083511, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 180213621}
   m_Father: {fileID: 687925357}
   m_RootOrder: 1
 --- !u!81 &1396882256
@@ -1066,7 +1107,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 4.15134764
+      value: 3.87710714
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
       propertyPath: m_LocalPosition.z
