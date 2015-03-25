@@ -46,8 +46,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Objectives.js" />
      <Compile Include="Assets\Scripts\Retrace.js" />
      <Compile Include="Assets\Scripts\TrackingScript.js" />
+     <None Include="Assets\Customizable Modern Furniture Pack\readme.txt" />
+     <None Include="Assets\Customizable Modern Furniture Pack\Demo\Demo\Shaders\Diffuse BothFaces.shader" />
  <Reference Include="Assembly-UnityScript-firstpass">
  <HintPath>C:/Users/Mercedes/Documents/KittyQuestStuff/Film3720/KittyQuest/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
  </Reference>
