@@ -6,6 +6,8 @@
 
 */
 
+import System.IO;
+
 private var playerPath : ArrayList;
 public var savePathFrequency = 0.25;
 
@@ -29,6 +31,19 @@ function SaveTransform()
 function NewPath()
 {
 	playerPath = new ArrayList();
+}
+
+// write path to file
+function SavePath(fileName: String)
+{
+	var sw : StreamWriter = new System.IO.StreamWriter(Application.dataPath + "/" + fileName);
+    // Write Vector3 for positions in path
+    sw.WriteLine("NEW PATH");
+    for each (var pos in playerPath)
+    {
+    	sw.WriteLine("" + pos.x + " " + pos.y + " " + pos.z);
+    }
+    sw.WriteLine("END PATH");
 }
 
 // return the path
