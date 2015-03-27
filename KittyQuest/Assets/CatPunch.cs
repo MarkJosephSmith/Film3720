@@ -6,7 +6,7 @@ using System.Collections;
 public class CatPunch : MonoBehaviour {
 
     public Rigidbody punchBody;
-    float punchSpeed = 30;
+    float punchSpeed = 15;
 
 	// Use this for initialization
 	void Start () {
