@@ -1,12 +1,18 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+/*
+ *
+ * This function can get buggy if the scale of the level is changed.  working to fix that.  Try adding player height X1.5 to top of object.
+ */
+
+
 public class ClimbCollide : MonoBehaviour {
 
     bool isClimbing = false;  //is the character currently climbing
     bool wasClimbing = false;  //is the character touching a climbable object
     int grip = 100;  //how strong is your grip
-    float topOfClimbable; //stores the top of a climable object
+    float topOfClimbable = 100000; //stores the top of a climable object
 
 
 
@@ -72,8 +78,9 @@ public class ClimbCollide : MonoBehaviour {
         //Debug.Log("feet at " + (this.gameObject.GetComponent<CharacterController>().transform.position.y) + "height at " + topOfClimbable);
 
         //stop climbing if we touched the ground or reached the top
-        if (this.gameObject.GetComponent<CharacterController>().isGrounded || !isClimbing)
+        if (this.gameObject.GetComponent<CharacterController>().isGrounded && isClimbing)
         {
+            Debug.Log("hit ground");
             StopClimbing();
         }
 
@@ -81,6 +88,7 @@ public class ClimbCollide : MonoBehaviour {
         //if ((this.gameObject.GetComponent<CharacterController>().transform.position.y - (this.gameObject.GetComponent<CharacterController>().height / .5)) >= topOfClimbable)
         if ((this.gameObject.GetComponent<CharacterController>().transform.position.y) >= topOfClimbable)
         {
+            Debug.Log("reached top");
             StopClimbing();
         }
 
@@ -103,11 +111,11 @@ public class ClimbCollide : MonoBehaviour {
 
         if (body.gameObject.CompareTag("Climbable"))
         {
-            //Debug.Log("Colliding");
+            Debug.Log("Colliding");
 
             //this will to see if we are on top of the object and only trigger if we are not.  
             //The check finds the Y coord of the players feet and compairs it to the top of the object
-            topOfClimbable = body.renderer.bounds.extents.y * 2.0f;
+            topOfClimbable = body.renderer.bounds.extents.y * 2.5f;
             
             //if ((this.gameObject.GetComponent<CharacterController>().center.y - (this.gameObject.GetComponent<CharacterController>().height / 2)) < topOfClimbable)
             //if ((this.gameObject.GetComponent<CharacterController>().transform.position.y - (this.gameObject.GetComponent<CharacterController>().height / .5)) <= topOfClimbable)
