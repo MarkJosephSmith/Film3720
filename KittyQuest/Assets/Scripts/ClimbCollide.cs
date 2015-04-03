@@ -115,7 +115,7 @@ public class ClimbCollide : MonoBehaviour {
 
             //this will to see if we are on top of the object and only trigger if we are not.  
             //The check finds the Y coord of the players feet and compairs it to the top of the object
-            topOfClimbable = body.renderer.bounds.extents.y * 2.5f;
+            topOfClimbable = body.GetComponent<Renderer>().bounds.extents.y * 2.5f;
             
             //if ((this.gameObject.GetComponent<CharacterController>().center.y - (this.gameObject.GetComponent<CharacterController>().height / 2)) < topOfClimbable)
             //if ((this.gameObject.GetComponent<CharacterController>().transform.position.y - (this.gameObject.GetComponent<CharacterController>().height / .5)) <= topOfClimbable)
