@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Customizable Modern Furniture Pack\readme.txt">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader">
     <Files>
       <File FileName="Assets\Climb.cs" Line="1" Column="1" />
       <File FileName="Assets\Customizable Modern Furniture Pack\readme.txt" Line="1" Column="1" />
+      <File FileName="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-BasicOutline.shader" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
