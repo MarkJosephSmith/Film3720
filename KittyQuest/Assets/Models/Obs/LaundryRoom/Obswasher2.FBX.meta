@@ -1,25 +1,27 @@
 fileFormatVersion: 2
-guid: 939e7492a263b6a41bfaa2f6f576611b
+guid: f7cd3271d26f3ea43b9d13716cd3c128
+timeCreated: 1428545442
+licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
     100000: //RootNode
-    100002: frame
-    100004: top
+    100002: washer_lod0
+    100004: washer_lod1
+    100006: washer_lod2
     400000: //RootNode
-    400002: frame
-    400004: top
-    2300000: //RootNode
-    2300002: frame
-    2300004: top
-    3300000: //RootNode
-    3300002: frame
-    3300004: top
-    4300000: pCube1
-    4300002: frame
-    4300004: top
-    7400000: Default Take
-    9500000: //RootNode
+    400002: washer_lod0
+    400004: washer_lod1
+    400006: washer_lod2
+    2300000: washer_lod0
+    2300002: washer_lod1
+    2300004: washer_lod2
+    3300000: washer_lod0
+    3300002: washer_lod1
+    3300004: washer_lod2
+    4300000: washer_lod0
+    4300002: washer_lod1
+    4300004: washer_lod2
   materials:
     importMaterials: 1
     materialName: 0
@@ -39,7 +41,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .00999999978
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -53,7 +55,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 0
+    useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     splitTangentsAcrossUV: 1
@@ -73,7 +75,7 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

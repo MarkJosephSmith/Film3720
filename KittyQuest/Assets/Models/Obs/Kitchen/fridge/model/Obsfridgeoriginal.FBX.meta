@@ -1,25 +1,42 @@
 fileFormatVersion: 2
-guid: 939e7492a263b6a41bfaa2f6f576611b
+guid: 031ef131ad549a141b039e6319fd12c1
+timeCreated: 1428545433
+licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: frame
-    100004: top
-    400000: //RootNode
-    400002: frame
-    400004: top
-    2300000: //RootNode
-    2300002: frame
-    2300004: top
-    3300000: //RootNode
-    3300002: frame
-    3300004: top
-    4300000: pCube1
-    4300002: frame
-    4300004: top
-    7400000: Default Take
-    9500000: //RootNode
+    100000: back
+    100002: Box01
+    100004: Box02
+    100006: Box03
+    100008: Object01
+    100010: Object02
+    100012: //RootNode
+    400000: back
+    400002: Box01
+    400004: Box02
+    400006: Box03
+    400008: Object01
+    400010: Object02
+    400012: //RootNode
+    2300000: back
+    2300002: Box01
+    2300004: Box02
+    2300006: Box03
+    2300008: Object01
+    2300010: Object02
+    3300000: back
+    3300002: Box01
+    3300004: Box02
+    3300006: Box03
+    3300008: Object01
+    3300010: Object02
+    4300000: Box01
+    4300002: Object01
+    4300004: Object02
+    4300006: Box02
+    4300008: Box03
+    4300010: back
   materials:
     importMaterials: 1
     materialName: 0
@@ -39,7 +56,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .00999999978
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -53,7 +70,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 0
+    useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     splitTangentsAcrossUV: 1
@@ -73,7 +90,7 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   additionalBone: 0
   userData: 
   assetBundleName: 

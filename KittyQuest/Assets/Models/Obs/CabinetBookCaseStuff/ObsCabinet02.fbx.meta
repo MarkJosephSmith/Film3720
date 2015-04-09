@@ -1,23 +1,32 @@
 fileFormatVersion: 2
-guid: 939e7492a263b6a41bfaa2f6f576611b
+guid: 84452bab45d0dc140a1bc9c7fd907f83
+timeCreated: 1428545437
+licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: frame
-    100004: top
-    400000: //RootNode
-    400002: frame
-    400004: top
-    2300000: //RootNode
-    2300002: frame
-    2300004: top
-    3300000: //RootNode
-    3300002: frame
-    3300004: top
-    4300000: pCube1
-    4300002: frame
-    4300004: top
+    100000: body
+    100002: doors
+    100004: //RootNode
+    100006: pulls
+    100008: side_panels
+    400000: body
+    400002: doors
+    400004: //RootNode
+    400006: pulls
+    400008: side_panels
+    2300000: body
+    2300002: doors
+    2300004: pulls
+    2300006: side_panels
+    3300000: body
+    3300002: doors
+    3300004: pulls
+    3300006: side_panels
+    4300000: pulls
+    4300002: doors
+    4300004: body
+    4300006: side_panels
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -39,7 +48,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: .00999999978
+    globalScale: 1
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -53,7 +62,7 @@ ModelImporter:
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
-    useFileScale: 0
+    useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     splitTangentsAcrossUV: 1
