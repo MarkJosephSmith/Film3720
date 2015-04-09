@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: e70d219ccf495914e8f559a388d6ee31
-timeCreated: 1428543712
+guid: 1199f5f281b0918498e7c10aa5c65e1f
+timeCreated: 1428557284
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -27,7 +27,7 @@ ModelImporter:
     4300002: seat_upper
     4300004: body
     4300006: seat_bottom
-    7400000: Default Take
+    7400000: Take 001
     9500000: //RootNode
   materials:
     importMaterials: 1

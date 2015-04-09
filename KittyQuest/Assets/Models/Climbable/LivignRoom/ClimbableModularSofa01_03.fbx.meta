@@ -28,6 +28,7 @@ ModelImporter:
     4300004: seat
     4300006: base
     7400000: Default Take
+    7400002: Take 001
     9500000: //RootNode
   materials:
     importMaterials: 1
