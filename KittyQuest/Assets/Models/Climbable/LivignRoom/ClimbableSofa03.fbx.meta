@@ -1,20 +1,22 @@
 fileFormatVersion: 2
-guid: 1c4b03e071c93624d97cc55274faf70d
+guid: d5b3a29a0d4528a4d839ef25d6afedd1
+timeCreated: 1428543712
+licenseType: Free
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 18
   fileIDToRecycleName:
     100000: back
     100002: base
-    100004: legs
-    100006: seat_bottom
-    100008: seat_upper
-    100010: //RootNode
+    100004: //RootNode
+    100006: legs
+    100008: seat_bottom
+    100010: seat_upper
     400000: back
     400002: base
-    400004: legs
-    400006: seat_bottom
-    400008: seat_upper
-    400010: //RootNode
+    400004: //RootNode
+    400006: legs
+    400008: seat_bottom
+    400010: seat_upper
     2300000: back
     2300002: base
     2300004: legs
@@ -56,20 +58,22 @@ ModelImporter:
     addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
+    keepQuads: 0
     weldVertices: 1
     secondaryUVAngleDistortion: 8
-    secondaryUVAreaDistortion: 15
+    secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
+    useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     splitTangentsAcrossUV: 1
     normalImportMode: 0
     tangentImportMode: 1
-  importAnimation: 0
+  importAnimation: 1
   copyAvatar: 0
   humanDescription:
     human: []
@@ -83,6 +87,8 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   additionalBone: 0
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,30 +1,32 @@
 fileFormatVersion: 2
-guid: 7aeeb2b6e678a0140aa8fad875721b73
+guid: e70d219ccf495914e8f559a388d6ee31
+timeCreated: 1428543712
+licenseType: Free
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 18
   fileIDToRecycleName:
-    100000: back
-    100002: base
+    100000: body
+    100002: //RootNode
     100004: legs
-    100006: //RootNode
-    100008: seat
-    400000: back
-    400002: base
+    100006: seat_bottom
+    100008: seat_upper
+    400000: body
+    400002: //RootNode
     400004: legs
-    400006: //RootNode
-    400008: seat
-    2300000: back
-    2300002: base
-    2300004: legs
-    2300006: seat
-    3300000: back
-    3300002: base
-    3300004: legs
-    3300006: seat
+    400006: seat_bottom
+    400008: seat_upper
+    2300000: body
+    2300002: legs
+    2300004: seat_bottom
+    2300006: seat_upper
+    3300000: body
+    3300002: legs
+    3300004: seat_bottom
+    3300006: seat_upper
     4300000: legs
-    4300002: back
-    4300004: seat
-    4300006: base
+    4300002: seat_upper
+    4300004: body
+    4300006: seat_bottom
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -51,20 +53,22 @@ ModelImporter:
     addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
+    keepQuads: 0
     weldVertices: 1
     secondaryUVAngleDistortion: 8
-    secondaryUVAreaDistortion: 15
+    secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
+    useFileScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     splitTangentsAcrossUV: 1
     normalImportMode: 0
     tangentImportMode: 1
-  importAnimation: 0
+  importAnimation: 1
   copyAvatar: 0
   humanDescription:
     human: []
@@ -78,6 +82,8 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   additionalBone: 0
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 
