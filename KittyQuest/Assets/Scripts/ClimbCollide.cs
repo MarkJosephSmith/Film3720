@@ -35,7 +35,7 @@ public class ClimbCollide : MonoBehaviour {
 
             //check to see if we are on the ground or not and set button input appropriatly
             // "w" moves you up and resets your grip
-            if (Input.GetKey("w"))
+            if (Input.GetAxis("Vertical") > 0.01f)
             {
                 System.Console.WriteLine(isClimbing);
                 grip = 100;
@@ -51,7 +51,7 @@ public class ClimbCollide : MonoBehaviour {
                 //if so nothing changes
             }
             //if we aren't grounded change the s key to climb down.
-            else if (Input.GetKey("s")) 
+			else if (Input.GetAxis("Vertical") < -0.01f) 
             {
                 grip = 100;
                 //this.gameObject.transform.Translate(0.0f, -0.2f, 0.0f, Space.World);
