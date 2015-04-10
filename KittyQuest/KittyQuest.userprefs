@@ -1,10 +1,8 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Tester.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MenuManager.cs">
     <Files>
-      <File FileName="Assets\Scripts\Tester.cs" Line="16" Column="18" />
-      <File FileName="Assets\Scripts\ClimbCollide.cs" Line="103" Column="14" />
-      <File FileName="Assets\Climb.cs" Line="1" Column="1" />
+      <File FileName="Assets/MenuManager.cs" Line="17" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -72,30 +72,23 @@
      <None Include="Assets\ProCore\Prototype\Shader\DiffuseVertexColorEmission.shader" />
      <None Include="Assets\ProCore\Prototype\About\Credits.txt" />
  <Reference Include="Assembly-UnityScript-firstpass">
-<<<<<<< Updated upstream
- <HintPath>/Users/Authenticated User/Desktop/KittyQuest/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
-=======
  <HintPath>/Users/Authenticated User/Film3720/KittyQuest/Library/ScriptAssemblies/Assembly-UnityScript-firstpass.dll</HintPath>
->>>>>>> Stashed changes
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>/Users/Shared/Unity/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
-<<<<<<< Updated upstream
- <Reference Include="ProBuilderCore-Unity5">
- <HintPath>/Users/Authenticated User/Desktop/KittyQuest/Assets/ProCore/Prototype/Classes/ProBuilderCore-Unity5.dll</HintPath>
+ <Reference Include="ProCore">
+ <HintPath>/Users/Authenticated User/Film3720/KittyQuest/Assets/ProCore/Shared/Code/ProCore.dll</HintPath>
  </Reference>
  <Reference Include="ProBuilderMeshOps-Unity5">
- <HintPath>/Users/Authenticated User/Desktop/KittyQuest/Assets/ProCore/Prototype/Classes/ProBuilderMeshOps-Unity5.dll</HintPath>
+ <HintPath>/Users/Authenticated User/Film3720/KittyQuest/Assets/ProCore/Prototype/Classes/ProBuilderMeshOps-Unity5.dll</HintPath>
  </Reference>
- <Reference Include="ProCore">
- <HintPath>/Users/Authenticated User/Desktop/KittyQuest/Assets/ProCore/Shared/Code/ProCore.dll</HintPath>
+ <Reference Include="ProBuilderCore-Unity5">
+ <HintPath>/Users/Authenticated User/Film3720/KittyQuest/Assets/ProCore/Prototype/Classes/ProBuilderCore-Unity5.dll</HintPath>
  </Reference>
  <Reference Include="pb_Profiler">
- <HintPath>/Users/Authenticated User/Desktop/KittyQuest/Assets/ProCore/Shared/pb_Profiler/pb_Profiler.dll</HintPath>
+ <HintPath>/Users/Authenticated User/Film3720/KittyQuest/Assets/ProCore/Shared/pb_Profiler/pb_Profiler.dll</HintPath>
  </Reference>
-=======
->>>>>>> Stashed changes
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
