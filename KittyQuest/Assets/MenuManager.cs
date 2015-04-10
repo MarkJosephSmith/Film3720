@@ -10,9 +10,7 @@ public class MenuManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	 	if(Input.GetAxis("Vertical") > 0.01f){
-			Debug.Log("kjgfjhgf");
-		}
+	
 	}
 
 	public void LoadDay(){
