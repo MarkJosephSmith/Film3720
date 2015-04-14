@@ -18,7 +18,7 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: d6ff6ff7ad9045e47961cb2b885b80c2, type: 3}
+          m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
@@ -149,7 +149,7 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: .470588207, g: .474048406, b: .474048406, a: 1}
+        second: {r: .20588237, g: .158441722, b: .0983996615, a: 1}
       data:
         first:
           name: _EmissionColorUI

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 481050bc976c5ae418a993bd09f4a2f7
-timeCreated: 1428544179
+guid: 8177fbcb7c9219f4f830e3dee5e17f51
+timeCreated: 1429016420
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -27,7 +27,7 @@ ModelImporter:
     4300002: lamp_shade
     4300004: support
     4300006: base
-    7400000: Default Take
+    7400000: Take 001
     9500000: //RootNode
   materials:
     importMaterials: 1
