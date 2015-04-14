@@ -9,20 +9,26 @@ ModelImporter:
     100002: frame
     100004: //RootNode
     100006: seat
+    100008: legs
     400000: back
     400002: frame
     400004: //RootNode
     400006: seat
+    400008: legs
     2300000: back
     2300002: frame
     2300004: seat
+    2300006: legs
     3300000: back
     3300002: frame
     3300004: seat
+    3300006: legs
     4300000: frame
     4300002: seat
     4300004: back
+    4300006: legs
     7400000: Default Take
+    7400002: Take 001
     9500000: //RootNode
   materials:
     importMaterials: 1

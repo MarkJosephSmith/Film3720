@@ -18,6 +18,7 @@ ModelImporter:
     4300000: legs
     4300002: seat
     7400000: Default Take
+    7400002: Take 001
     9500000: //RootNode
   materials:
     importMaterials: 1

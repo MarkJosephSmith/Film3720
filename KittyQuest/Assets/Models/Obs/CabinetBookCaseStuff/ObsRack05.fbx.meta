@@ -13,11 +13,15 @@ ModelImporter:
     400004: //RootNode
     2300000: boards
     2300002: frame
+    2300004: //RootNode
     3300000: boards
     3300002: frame
+    3300004: //RootNode
     4300000: boards
     4300002: frame
+    4300004: body
     7400000: Default Take
+    7400002: Take 001
     9500000: //RootNode
   materials:
     importMaterials: 1

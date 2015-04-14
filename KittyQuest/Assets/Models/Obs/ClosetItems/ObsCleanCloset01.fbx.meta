@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: df6d3b94c274f8c4bab458d2010e67ca
 ModelImporter:
-  serializedVersion: 16
+  serializedVersion: 18
   fileIDToRecycleName:
     100000: //RootNode
     100002: pCube1
@@ -92,7 +92,9 @@ ModelImporter:
     400084: transform8
     400086: transform9
     2300000: pCylinder17
+    2300002: //RootNode
     3300000: pCylinder17
+    3300002: //RootNode
     4300000: pCylinder17
     9500000: //RootNode
   materials:
@@ -122,11 +124,13 @@ ModelImporter:
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
+    keepQuads: 0
     weldVertices: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     splitTangentsAcrossUV: 1
@@ -149,3 +153,5 @@ ModelImporter:
   animationType: 2
   additionalBone: 0
   userData: 
+  assetBundleName: 
+  assetBundleVariant: 
