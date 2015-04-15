@@ -33,6 +33,7 @@ ModelImporter:
     4300006: drawers
     4300008: body
     7400000: Default Take
+    7400002: Take 001
     9500000: //RootNode
   materials:
     importMaterials: 1
