@@ -11,6 +11,7 @@ GameObject:
   - 20: {fileID: 2009558}
   - 124: {fileID: 12442362}
   - 92: {fileID: 9264878}
+  - 114: {fileID: 11472838}
   m_Layer: 0
   m_Name: Mini Map
   m_TagString: Untagged
@@ -24,7 +25,7 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 106686}
-  m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
+  m_LocalRotation: {x: -1.15202326e-07, y: -.707106709, z: .707106829, w: -1.15202312e-07}
   m_LocalPosition: {x: 27.5, y: 5, z: 36.2999992}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -69,6 +70,19 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 106686}
   m_Enabled: 1
+--- !u!114 &11472838
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 106686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c41c044d210246a88d00305cec608c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 100002, guid: 9d4133d5d30b644bd87802a347eaccbe, type: 2}
+  floor: {fileID: 0}
 --- !u!124 &12442362
 Behaviour:
   m_ObjectHideFlags: 1
