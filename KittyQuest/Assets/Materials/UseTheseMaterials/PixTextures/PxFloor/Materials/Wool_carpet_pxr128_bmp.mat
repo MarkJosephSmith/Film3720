@@ -7,7 +7,7 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Wool_carpet_pxr128_bmp
-  m_Shader: {fileID: 4800000, guid: 9ce107479d11178d11005b9844295342, type: 3}
+  m_Shader: {fileID: 4800000, guid: 48dca5b99d113b8d11006bab44295342, type: 3}
   m_ShaderKeywords: _DETAIL_MULX2 _NORMALMAP
   m_LightmapFlags: 5
   m_CustomRenderQueue: -1
@@ -19,7 +19,7 @@ Material:
           name: _MainTex
         second:
           m_Texture: {fileID: 2800000, guid: dd681ad2cb0fc3447a1122ff8fee2c10, type: 3}
-          m_Scale: {x: 100, y: 100}
+          m_Scale: {x: 3, y: 3}
           m_Offset: {x: 0, y: 0}
       data:
         first:
@@ -37,10 +37,17 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _ToonShade
+          name: _Ramp
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ToonShade
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 10, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
@@ -80,6 +87,13 @@ Material:
       data:
         first:
           name: _MetallicGlossMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _SpecGlossMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -149,7 +163,11 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: .515666425, g: .529411793, b: .467128038, a: 1}
+        second: {r: .91911763, g: .797469676, b: .614997864, a: 1}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: .200000003, g: .200000003, b: .200000003, a: 1}
       data:
         first:
           name: _OutlineColor
