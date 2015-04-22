@@ -23,21 +23,18 @@ function OnGUI ()
  	
   	var centeredStyle = GUI.skin.GetStyle("Label");
     centeredStyle.alignment = TextAnchor.UpperCenter;	
- 	if (indexObj >= objectives.Length)
- 	{
 
- 		GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"Take a nap in a sunspot.", centeredStyle);
- 	} 
- 	else
- 	{
+ 	if (objectives[indexObj] != null) {
  		var objective: GameObject = objectives[indexObj];
+ 		objective.GetComponent(Objective).Enable();
+
  		if (objective.transform.tag == "Moveable")
  		{
  			GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50), ("Knock over the " + objective.transform.name), centeredStyle);
  		}
  		else if (objective.transform.tag == "Destination")
  		{
- 			Debug.Log("HELLO!");
+ 			//Debug.Log("HELLO!");
  			GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50), ("Go to the " + objective.transform.name), centeredStyle);
  		}
  		else if (objective.transform.tag == "Climbable")
@@ -45,4 +42,12 @@ function OnGUI ()
  		
  		}
  	}
-}
+ 	else {
+ 	 		GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"Take a nap in a sunspot.", centeredStyle);
+ 	}
+ }
+
+	function ObjectiveEntered(timelapsed : float) {
+		Debug.Log("Objective Completed in " + timelapsed + " seconds!");
+		indexObj++;
+	}
