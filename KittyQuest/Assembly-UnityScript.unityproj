@@ -48,7 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\KQ_HUD.js" />
      <Compile Include="Assets\Scripts\KQ_Mini_Map.js" />
-     <Compile Include="Assets\Scripts\Objectives.js" />
+     <Compile Include="Assets\Scripts\Objective.js" />
      <Compile Include="Assets\Scripts\Retrace.js" />
      <Compile Include="Assets\Scripts\TrackingScript.js" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
