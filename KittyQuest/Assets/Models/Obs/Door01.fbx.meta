@@ -1,0 +1,167 @@
+fileFormatVersion: 2
+guid: 33993836c6f59ef47ba6b30087e84617
+timeCreated: 1429883443
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Door:obj_01
+    100004: Door:obj_02
+    100006: Door:obj_03
+    100008: Door:obj_04
+    100010: Door:obj_05
+    100012: Door:obj_06
+    100014: Door:obj_07
+    100016: Door:obj_09
+    100018: Door:obj_10
+    100020: Door:obj_11
+    100022: Door:obj_12
+    100024: Door:obj_13
+    100026: Door:obj_14
+    100028: Door:obj_15
+    100030: Door:obj_16
+    100032: Door:obj_17
+    100034: Door:obj_18
+    100036: Door:obj_19
+    100038: Door:obj_20
+    100040: Door:obj_21
+    400000: //RootNode
+    400002: Door:obj_01
+    400004: Door:obj_02
+    400006: Door:obj_03
+    400008: Door:obj_04
+    400010: Door:obj_05
+    400012: Door:obj_06
+    400014: Door:obj_07
+    400016: Door:obj_09
+    400018: Door:obj_10
+    400020: Door:obj_11
+    400022: Door:obj_12
+    400024: Door:obj_13
+    400026: Door:obj_14
+    400028: Door:obj_15
+    400030: Door:obj_16
+    400032: Door:obj_17
+    400034: Door:obj_18
+    400036: Door:obj_19
+    400038: Door:obj_20
+    400040: Door:obj_21
+    2300000: Door:obj_01
+    2300002: Door:obj_02
+    2300004: Door:obj_03
+    2300006: Door:obj_04
+    2300008: Door:obj_05
+    2300010: Door:obj_06
+    2300012: Door:obj_07
+    2300014: Door:obj_09
+    2300016: Door:obj_10
+    2300018: Door:obj_11
+    2300020: Door:obj_12
+    2300022: Door:obj_13
+    2300024: Door:obj_14
+    2300026: Door:obj_15
+    2300028: Door:obj_16
+    2300030: Door:obj_17
+    2300032: Door:obj_18
+    2300034: Door:obj_19
+    2300036: Door:obj_20
+    2300038: Door:obj_21
+    3300000: Door:obj_01
+    3300002: Door:obj_02
+    3300004: Door:obj_03
+    3300006: Door:obj_04
+    3300008: Door:obj_05
+    3300010: Door:obj_06
+    3300012: Door:obj_07
+    3300014: Door:obj_09
+    3300016: Door:obj_10
+    3300018: Door:obj_11
+    3300020: Door:obj_12
+    3300022: Door:obj_13
+    3300024: Door:obj_14
+    3300026: Door:obj_15
+    3300028: Door:obj_16
+    3300030: Door:obj_17
+    3300032: Door:obj_18
+    3300034: Door:obj_19
+    3300036: Door:obj_20
+    3300038: Door:obj_21
+    4300000: Door:obj_01
+    4300002: Door:obj_02
+    4300004: Door:obj_03
+    4300006: Door:obj_04
+    4300008: Door:obj_05
+    4300010: Door:obj_06
+    4300012: Door:obj_07
+    4300014: Door:obj_09
+    4300016: Door:obj_10
+    4300018: Door:obj_11
+    4300020: Door:obj_12
+    4300022: Door:obj_13
+    4300024: Door:obj_14
+    4300026: Door:obj_15
+    4300028: Door:obj_16
+    4300030: Door:obj_17
+    4300032: Door:obj_18
+    4300034: Door:obj_19
+    4300036: Door:obj_20
+    4300038: Door:obj_21
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
