@@ -26,7 +26,7 @@ function OnGUI ()
 
  	if (objectives[indexObj] != null) {
  		var objective: GameObject = objectives[indexObj];
- 		objective.GetComponent(Objective).Enable();
+// 		objective.GetComponent(Objective).Enable();
 
  		if (objective.transform.tag == "Moveable")
  		{

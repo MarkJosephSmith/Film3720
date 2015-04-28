@@ -1,6 +1,6 @@
 ﻿#pragma strict
 
-private var current = false;
+public var playerInteraction = false;
 private var startTime: float = 0.0;
 private var player: GameObject;
 
@@ -11,25 +11,22 @@ function Start() {
 function OnTriggerEnter (other : Collider) {
 	// Check if enabled and object is the player
 	//Debug.Log("Objective Trigger Entered");
-	if (current && other.gameObject.tag == "Player") {
-		var timelapsed = Time.time - startTime;
-		player.SendMessage("ObjectiveEntered",timelapsed);
-		current = false;
+	if (playerInteraction && other.gameObject.tag != "Player") {
+		return;
 	}
+	var timelapsed = Time.time - startTime;
+	player.SendMessage("ObjectiveEntered", gameObject.name);
+	this.enabled = false;
 }
 
 function OnCollisionEnter (other : Collision) {
 	// Check if enabled and object is the player
 	//Debug.Log("Objective Trigger Entered");
 
-	if (current) {
-		var timelapsed = Time.time - startTime;
-		player.SendMessage("ObjectiveEntered",timelapsed);
-		current = false;
+	if (playerInteraction && other.gameObject.tag != "Player") {
+		return;
 	}
-}
-
-function Enable() {
-	current = true;
-	startTime = Time.time;
+	var timelapsed = Time.time - startTime;
+	player.SendMessage("ObjectiveEntered", gameObject.name);
+	this.enabled = false;
 }
