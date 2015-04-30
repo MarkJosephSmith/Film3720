@@ -99,6 +99,10 @@ Material:
         second: 0
       data:
         first:
+          name: _Outline
+        second: .00499999989
+      data:
+        first:
           name: _Parallax
         second: .0199999996
       data:
@@ -137,10 +141,6 @@ Material:
         first:
           name: _Metallic
         second: 0
-      data:
-        first:
-          name: _Outline
-        second: .00499999989
     m_Colors:
       data:
         first:
@@ -149,12 +149,12 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: .137975797, g: .415338337, b: .647058845, a: 1}
-      data:
-        first:
-          name: _EmissionColorUI
-        second: {r: 1, g: 1, b: 1, a: 1}
+        second: {r: .335748285, g: .337103307, b: .338235319, a: 1}
       data:
         first:
           name: _OutlineColor
         second: {r: 0, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _EmissionColorUI
+        second: {r: 1, g: 1, b: 1, a: 1}
