@@ -67,6 +67,7 @@
      <Compile Include="Assets\Scripts\CameraSwap.cs" />
      <Compile Include="Assets\Scripts\CatPunch.cs" />
      <Compile Include="Assets\Scripts\ClimbCollide.cs" />
+     <Compile Include="Assets\Scripts\IngameMenu.cs" />
      <Compile Include="Assets\Scripts\MenuManager.cs" />
      <Compile Include="Assets\Scripts\Moveable.cs" />
      <Compile Include="Assets\Scripts\PunchCleanup.cs" />

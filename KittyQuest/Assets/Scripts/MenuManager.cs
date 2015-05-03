@@ -2,16 +2,33 @@
 using System.Collections;
 
 public class MenuManager : MonoBehaviour {
-	public Camera MainCam;
-	public Camera ChooseCam;
-	public Camera ControlsCam;
 
+	public Canvas Menu;
+	public Canvas SelectDay;
+	private bool _showIngameMenu = false;
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
+		Menu.enabled = false;
+		SelectDay.enabled = false;
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
+		if(Input.GetKeyDown(KeyCode.Escape))
+		{
+			if(Menu.enabled == false)
+			{
+				Debug.Log ("Ingame Menu On");
+				Menu.enabled = true;
+			}
+			else
+			{
+				Debug.Log ("Ingame Menu Off");
+				Menu.enabled = false;
+			}
+		}
 	}
 
 	public void LoadDay1(){
@@ -52,5 +69,16 @@ public class MenuManager : MonoBehaviour {
 	public void Exitgame(){
 		Debug.Log ("GameExited");
 		Application.Quit();
+	}
+	public void IGSelectDay(){
+		Debug.Log ("Ingame Select a Day");
+		Menu.enabled = false;
+		SelectDay.enabled = true;
+	}
+	public void IGBack()
+	{
+		Debug.Log ("Ingame Back");
+		Menu.enabled = true;
+		SelectDay.enabled = false;
 	}
 }
