@@ -36,7 +36,15 @@ public class Found : MonoBehaviour {
 				//set it to true
 				isFound = true;
 
+
+
 				//incriment the objective count
+
+
+
+				GameObject play = col.gameObject;
+				KQ_HUD_03 theHUD = play.GetComponent<KQ_HUD_03>();
+				theHUD.numFound +=1;
 			
 			} 
 
