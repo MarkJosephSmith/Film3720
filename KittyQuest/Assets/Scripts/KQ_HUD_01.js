@@ -6,6 +6,7 @@ import System.IO;
 public var Lives: int = 9;
 public var kitty: Texture;
 private var lifeCounter: GUIText;
+private var roomVisits: int = 0;
 
 // For Displaying and Creating Objectives
 private var indexObjective: int = 0;
@@ -29,22 +30,21 @@ function OnGUI ()
 		 GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"Explore the house.", centeredStyle);
  	break;
  	case 1: // Find Ball
- 	 	 	 GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"Find the ball in the living room.", centeredStyle);
+ 	 	 	 GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"Find the Ball in the Living Room.", centeredStyle);
 
  	break;
- 	case 2: // ball to dining room
- 	 	 	 GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"Click to bat the ball into the dining room.", centeredStyle);
+ 	case 2: // ball to kitchen
+ 	 	 	 GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"Click to bat the Ball into the Kitchen.", centeredStyle);
  	break;
- 	case 3: // ball to living room
- 	 	 GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"Bat the ball under the stairs.", centeredStyle);
+ 	case 3: // ball to entryway
+ 	 	 GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"Bat the Ball back to the Front Door.", centeredStyle);
  	
  	break;
  	case 4: // find a vantage point
-
- 	 	 GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"Take a nap in the living room sunspot.", centeredStyle);
+ 	 	 GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"Find a sunspot in the Living Room to nap in.", centeredStyle);
  	break;
  	default:
- 		Debug.Log("DEFAULT SWITCH CASE");
+ 	break;
  	}
  }
 
@@ -53,19 +53,21 @@ function OnGUI ()
 		 switch (indexObjective)
  		{
  		case 0: // EXPLORE THE HOUSE
-			 if("EXPLORE".Equals(objective))
+			 if(objective.Contains("ROOM"))
+			 	roomVisits++;
+			 if (roomVisits >= 4)
 			 	indexObjective++;
  		break;
  		case 1: // Find Ball
 			if("BALL".Equals(objective))
 			 	indexObjective++;
  		break;
- 		case 2: // ball to dining room
- 			if("DINING".Equals(objective))
+ 		case 2: // ball to kitchen
+ 			if("KITCHEN".Equals(objective))
 			 	indexObjective++;
  		break;
  		case 3: // ball to stairs
- 	 		if("STAIRS".Equals(objective))
+ 	 		if("FRONTDOOR".Equals(objective))
 			 	indexObjective++;
  		break;
 		case 4:
@@ -73,6 +75,6 @@ function OnGUI ()
 			 	indexObjective++;
 		break;
  		default: // nap in the sunspot
- 		Debug.Log("DEFAULT SWITCH CASE");
+ 		break;
  		}
 	}
