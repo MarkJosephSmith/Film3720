@@ -45,7 +45,7 @@ public class CameraSwap : MonoBehaviour {
 			}
 
 			//call that camswap
-			Debug.Log("passing in " + whatCam);
+			//Debug.Log("passing in " + whatCam);
 			CamSwap(whatCam);
 		}
 		
@@ -54,7 +54,7 @@ public class CameraSwap : MonoBehaviour {
 	//takes an int from 0 to 2 and sets the camera according to 0 = first person, 1 = third person, 2 = Oculus
 	void CamSwap(int tempCam)
 	{
-		Debug.Log("got " + whatCam);
+		//Debug.Log("got " + whatCam);
 		//set camera to 1st person
 		if (tempCam == 0) 
 		{
@@ -89,7 +89,7 @@ public class CameraSwap : MonoBehaviour {
 		//something has gone wrong, print an error and reset the camera to first person
 		else 
 		{
-			Debug.Log("CameraSwap script busted, went over max number of cameras");
+			//Debug.Log("CameraSwap script busted, went over max number of cameras");
 			CamSwap(0);
 		}
 
