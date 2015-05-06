@@ -7,6 +7,7 @@ TagManager:
   - Climbable
   - Destination
   - Moveable
+  - Punch
   layers:
   - Default
   - TransparentFX

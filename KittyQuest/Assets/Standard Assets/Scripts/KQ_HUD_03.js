@@ -28,7 +28,7 @@ function OnGUI ()
  	switch (indexObjective)
  	{
  	case 0: // Find the bottles
-		 GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"The find all the portable puddles. " + numFound + "/6", centeredStyle);
+		 GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"The find all the portable puddles. " + numFound + "/6" + " hit " + numHit, centeredStyle);
  	break;
  	case 1: // Find Ball
  	 	 	 GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"Find the ball in the living room.", centeredStyle);

@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Climb.cs" />
      <Compile Include="Assets\FireAnimation.cs" />
+     <Compile Include="Assets\HitScript.cs" />
      <Compile Include="Assets\OVR\Scripts\ClimbSensor.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCameraRig.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCommon.cs" />

@@ -15,7 +15,7 @@ public class PunchCleanup : MonoBehaviour {
 	void Update () {
 
         framesTraveled += 1;
-        if (framesTraveled > 10)
+        if (framesTraveled > 7)
         {
             punchDestroy = true;
         }
