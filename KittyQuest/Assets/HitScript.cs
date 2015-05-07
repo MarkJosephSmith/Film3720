@@ -32,6 +32,9 @@ public class HitScript : MonoBehaviour {
 				GameObject play = GameObject.Find("First Person Controller");
 				KQ_HUD_03 theHUD = play.GetComponent<KQ_HUD_03>();
 				theHUD.numHit +=1;
+
+				//trigger a check on the count of found objects
+				theHUD.ObjectiveEntered("HITONE");
 				
 			} 
 			

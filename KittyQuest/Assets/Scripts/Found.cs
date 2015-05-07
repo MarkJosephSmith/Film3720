@@ -39,12 +39,13 @@ public class Found : MonoBehaviour {
 
 
 				//incriment the objective count
-
-
-
 				GameObject play = col.gameObject;
 				KQ_HUD_03 theHUD = play.GetComponent<KQ_HUD_03>();
 				theHUD.numFound +=1;
+
+				//trigger a check on the count of found objects
+				//trigger a check on the count of found objects
+				theHUD.ObjectiveEntered("FOUNDONE");
 			
 			} 
 

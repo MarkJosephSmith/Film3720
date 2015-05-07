@@ -28,22 +28,18 @@ function OnGUI ()
  	switch (indexObjective)
  	{
  	case 0: // Find the bottles
-		 GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"The find all the portable puddles. " + numFound + "/6" + " hit " + numHit, centeredStyle);
+		 GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"The find all the portable puddles.  They are a hazard.  " + numFound + "/6", centeredStyle);
  	break;
- 	case 1: // Find Ball
- 	 	 	 GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"Find the ball in the living room.", centeredStyle);
+ 	case 1: // Hit a bottle
+ 	 	 	 GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"Knock one over, but know that it will wake the humans.", centeredStyle);
 
  	break;
- 	case 2: // ball to dining room
- 	 	 	 GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"Click to bat the ball into the dining room.", centeredStyle);
+ 	case 2: // Hit all bottles
+ 	 	 	 GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"Knock over all 6 before time runs out.  "+ numHit + "/6", centeredStyle);
  	break;
- 	case 3: // ball to living room
- 	 	 GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"Bat the ball under the stairs.", centeredStyle);
+ 	case 3: // Hide behind boxes under stairs
+ 	 	 GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"Hide under the stairs.  The humans will forget by morning.", centeredStyle);
  	
- 	break;
- 	case 4: // find a vantage point
-
- 	 	 GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"Take a nap in the living room sunspot.", centeredStyle);
  	break;
  	default:
  		Debug.Log("DEFAULT SWITCH CASE");
@@ -52,29 +48,35 @@ function OnGUI ()
 
 	function ObjectiveEntered(objective: String) {
 		//Debug.Log("Objective Completed in " + timelapsed + " seconds!");
+		Debug.Log(objective);
 		 switch (indexObjective)
  		{
- 		case 0: // EXPLORE THE HOUSE
-			 if("EXPLORE".Equals(objective))
+ 		case 0: // Found a bottle
+			 if("FOUNDONE".Equals(objective))
+			 {
+			 	if (numFound >= 6)
+			 		indexObjective++;
+			 }
+ 		break;
+ 		case 1: // found all bottles
+			if("ALLFOUND".Equals(objective))
 			 	indexObjective++;
  		break;
- 		case 1: // Find Ball
-			if("BALL".Equals(objective))
-			 	indexObjective++;
+ 		case 2: // hit a bottle
+ 			if("HITONE".Equals(objective))
+ 			{
+ 			Debug.Log(numHit);
+			 	if (numHit >= 6)
+			 		indexObjective++;
+			 	if (numHit == 1)
+			 		indexObjective = 2;
+			}
  		break;
- 		case 2: // ball to dining room
- 			if("DINING".Equals(objective))
-			 	indexObjective++;
+ 		case 3: // hide
+ 	 		//if("STAIRS".Equals(objective))
+			 	//indexObjective++;
  		break;
- 		case 3: // ball to stairs
- 	 		if("STAIRS".Equals(objective))
-			 	indexObjective++;
- 		break;
-		case 4:
-		 	 if("SUNSPOT".Equals(objective))
-			 	indexObjective++;
-		break;
- 		default: // nap in the sunspot
+ 		default: 
  		Debug.Log("DEFAULT SWITCH CASE");
  		}
 	}

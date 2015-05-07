@@ -49,8 +49,11 @@
      <Compile Include="Assets\Scripts\KQ_HUD.js" />
      <Compile Include="Assets\Scripts\KQ_HUD_01.js" />
      <Compile Include="Assets\Scripts\KQ_HUD_02.js" />
+     <Compile Include="Assets\Scripts\KQ_HUD_04.js" />
      <Compile Include="Assets\Scripts\KQ_Mini_Map.js" />
      <Compile Include="Assets\Scripts\Objective.js" />
+     <Compile Include="Assets\Scripts\Objective_TargetLocation.js" />
+     <Compile Include="Assets\Scripts\Objective_Wet.js" />
      <Compile Include="Assets\Scripts\Retrace.js" />
      <Compile Include="Assets\Scripts\TrackingScript.js" />
      <None Include="Assets\Plugins\donotdelete.txt" />
