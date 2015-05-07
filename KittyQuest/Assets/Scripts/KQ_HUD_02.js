@@ -30,13 +30,14 @@ function OnGUI ()
  	 	 GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"Get back to the 1st Floor WITHOUT using the Stairs.", centeredStyle);
  	break;
  	case 3: // ball to entryway
- 	 	 GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"Take an inconspicuous nap in the Living Room Sunspot.", centeredStyle);
+ 	 	 GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"Take an inconspicuous nap in a Living Room Sunspot.", centeredStyle);
  	
  	break;
 // 	case 4: // find a vantage point
 // 	 	 GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"Find a sunspot in the Living Room to nap in.", centeredStyle);
 // 	break;
  	default:
+ 	 	Application.LoadLevel(Application.loadedLevel + 1);
  	break;
  	}
  	

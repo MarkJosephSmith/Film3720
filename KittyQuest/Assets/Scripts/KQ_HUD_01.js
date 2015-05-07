@@ -37,6 +37,8 @@ function OnGUI ()
  	 	 GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"Find a sunspot in the Living Room to nap in.", centeredStyle);
  	break;
  	default:
+ 	 			Application.LoadLevel(Application.loadedLevel + 1);
+
  	break;
  	}
  	

@@ -26,7 +26,7 @@ function OnGUI ()
 		 GUI.Label(Rect(50, Screen.height * 0.9, Screen.width, 50),"The Red Living Room carpet is wet from steaming-get to the kitchen without touching it.", centeredStyle);
  	break;
  	case 1: // Find Ball
- 		 GUI.Label(Rect(50, Screen.height * 0.9, Screen.width, 50),"There is an expensive laptop in the house. Knock it onto the ground.", centeredStyle);
+ 		 GUI.Label(Rect(50, Screen.height * 0.9, Screen.width, 50),"There is a brand new laptop in the house. Knock it onto the ground.", centeredStyle);
  	break;
  	case 2: // ball to kitchen
  	 	 GUI.Label(Rect(50, Screen.height * 0.9, Screen.width, 50),"Get a drink from a sink.", centeredStyle);
@@ -35,10 +35,9 @@ function OnGUI ()
  	 	 GUI.Label(Rect(50, Screen.height * 0.9, Screen.width, 50),"Get back to your sunny armchair without touching the Red Carpet.", centeredStyle);
  	
  	break;
-// 	case 4: // find a vantage point
-// 	 	 GUI.Label(Rect(Screen.width/4, Screen.height * 0.8, Screen.width/2, 50),"Find a sunspot in the Living Room to nap in.", centeredStyle);
-// 	break;
  	default:
+ 	 			Application.LoadLevel(Application.loadedLevel + 1);
+;
  	break;
  	}
  	
