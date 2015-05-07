@@ -49,6 +49,10 @@ function OnGUI ()
 	function ObjectiveEntered(objective: String) {
 		//Debug.Log("Objective Completed in " + timelapsed + " seconds!");
 		Debug.Log(objective);
+		
+		if (numHit == 1)
+			indexObjective = 2;
+			
 		 switch (indexObjective)
  		{
  		case 0: // Found a bottle
@@ -68,8 +72,7 @@ function OnGUI ()
  			Debug.Log(numHit);
 			 	if (numHit >= 6)
 			 		indexObjective++;
-			 	if (numHit == 1)
-			 		indexObjective = 2;
+
 			}
  		break;
  		case 3: // hide

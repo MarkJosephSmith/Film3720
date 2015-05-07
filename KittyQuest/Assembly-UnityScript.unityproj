@@ -50,6 +50,7 @@
      <Compile Include="Assets\Scripts\KQ_HUD_01.js" />
      <Compile Include="Assets\Scripts\KQ_HUD_02.js" />
      <Compile Include="Assets\Scripts\KQ_HUD_04.js" />
+     <Compile Include="Assets\Scripts\KQ_HUD_05.js" />
      <Compile Include="Assets\Scripts\KQ_Mini_Map.js" />
      <Compile Include="Assets\Scripts\Objective.js" />
      <Compile Include="Assets\Scripts\Objective_TargetLocation.js" />
