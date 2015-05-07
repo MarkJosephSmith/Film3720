@@ -12,12 +12,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu03.unity
   - enabled: 1
-    path: Assets/Scenes/Day_001.unity
+    path: Assets/Scenes/Day_1.unity
   - enabled: 1
-    path: Assets/Scenes/Day_3.unity
+    path: Assets/Scenes/Day_2.unity
   - enabled: 1
     path: Assets/Scenes/Day_3.unity
   - enabled: 1
     path: Assets/Scenes/Day_4.unity
   - enabled: 1
-    path: Assets/Scenes/Day_05.unity
+    path: Assets/Scenes/Day_5.unity
