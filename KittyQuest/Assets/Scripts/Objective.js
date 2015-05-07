@@ -11,7 +11,7 @@ function Start() {
 function OnTriggerEnter (other : Collider) {
 	// Check if enabled and object is the player
 	//Debug.Log("Objective Trigger Entered");
-	if (playerInteraction && other.gameObject.tag != "Player") {
+	if (playerInteraction && other.gameObject.tag != "Player" && other.gameObject.tag != "Punch") {
 		return;
 	}
 	var timelapsed = Time.time - startTime;
@@ -23,7 +23,7 @@ function OnCollisionEnter (other : Collision) {
 	// Check if enabled and object is the player
 	//Debug.Log("Objective Trigger Entered");
 
-	if (playerInteraction && other.gameObject.tag != "Player") {
+	if (playerInteraction && other.gameObject.tag != "Player" && other.gameObject.tag != "Punch") {
 		return;
 	}
 	var timelapsed = Time.time - startTime;
