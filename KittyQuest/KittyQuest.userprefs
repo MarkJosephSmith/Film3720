@@ -1,15 +1,13 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Standard Assets\Scripts\KQ_HUD_03.js">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\KQ_HUD_01.js">
     <Files>
+      <File FileName="Assets\Scripts\KQ_HUD_01.js" Line="40" Column="7" />
       <File FileName="Assets\Scripts\KQ_Mini_Map.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Objective.js" Line="1" Column="1" />
       <File FileName="Assets\punchAnimation.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\KQ_HUD_01.js" Line="1" Column="1" />
       <File FileName="Assets\Scripts\PunchCleanup.cs" Line="1" Column="1" />
-      <File FileName="Assets\Standard Assets\Scripts\KQ_HUD_03.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Found.cs" Line="1" Column="1" />
-      <File FileName="Assets\HitScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Standard Assets\Scripts\KQ_HUD_03.js" Line="94" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

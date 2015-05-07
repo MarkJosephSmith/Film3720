@@ -46,7 +46,7 @@ function OnGUI ()
  	
  	break;
  	default:
- 		Debug.Log("DEFAULT SWITCH CASE");
+ 		Application.LoadLevel(Application.loadedLevel + 1);
  	}
  }
 
@@ -78,7 +78,7 @@ function OnGUI ()
  		case 2: // hit a bottle
  			if("HITONE".Equals(objective))
  			{
- 			Debug.Log(numHit);
+ 			//Debug.Log(numHit);
 			 	if (numHit >= 6)
 			 		indexObjective++;
 
@@ -89,7 +89,8 @@ function OnGUI ()
 			 	indexObjective++;
  		break;
  		default: 
- 		Debug.Log("DEFAULT SWITCH CASE");
+ 		break;
+ 		//Debug.Log("DEFAULT SWITCH CASE");
  		}
 	}
 	
