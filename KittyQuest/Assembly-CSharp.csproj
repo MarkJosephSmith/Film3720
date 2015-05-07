@@ -75,6 +75,7 @@
      <Compile Include="Assets\Scripts\Moveable.cs" />
      <Compile Include="Assets\Scripts\PunchCleanup.cs" />
      <Compile Include="Assets\Scripts\Tester.cs" />
+     <Compile Include="Assets\punchAnimation.cs" />
      <None Include="Assets\Plugins\donotdelete.txt" />
      <None Include="Assets\Standard Assets\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
      <None Include="Assets\ProCore\Prototype\About\changelog.txt" />

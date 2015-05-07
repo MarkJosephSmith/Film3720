@@ -40,6 +40,17 @@ AnimatorController:
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
   m_MultiThreadedStateMachine: 1
+--- !u!114 &11400568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35b42b817c5919b43a68fc7717f9b845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1101 &110108198
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -280,7 +291,8 @@ AnimatorState:
   - {fileID: 110115186}
   - {fileID: 110108198}
   - {fileID: 110172376}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: 11400568}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
